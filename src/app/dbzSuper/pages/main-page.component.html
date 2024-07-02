@@ -1,0 +1,16 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <dbzSup-list [CharacterList]="characters"></dbzSup-list>
+
+  </div>
+
+  <div class="col">
+
+    <!-- Aca tengo que recibir al componente hijo  -->
+    <dbzSup-add-character (onNewCharacter)="onNewCharacter($event)"></dbzSup-add-character>
+
+  </div>
